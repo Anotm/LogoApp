@@ -11,3 +11,63 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+main {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden; */
+  background-image: url("images/background.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.Grid {
+  margin: 2% 2%;
+  display: grid;
+  width: 96%;
+  height: 96%;
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-areas: 
+    "Space1 Space1 Space1 Space1"
+    "App1 App2 App3 App4"
+    "App5 App6 App7 App8"
+    "App9 App10 App11 App12"
+    "App13 App14 App15 App16"
+    "App17 App18 App19 App20"
+    "Space2 Space2 Space2 Space2"
+    "FaveApps FaveApps FaveApps FaveApps";
+}
+
+.Space2 { grid-area: Space1; }
+.App1 { grid-area: App1; }
+.App2 { grid-area: App2; }
+.App3 { grid-area: App3; }
+.App4 { grid-area: App4; }
+.App5 { grid-area: App5; }
+.App6 { grid-area: App6; }
+.App7 { grid-area: App7; }
+.App8 { grid-area: App8; }
+.App9 { grid-area: App9; }
+.App10 { grid-area: App10; }
+.App11 { grid-area: App11; }
+.App12 { grid-area: App12; }
+.App13 { grid-area: App13; }
+.App14 { grid-area: App14; }
+.App15 { grid-area: App15; }
+.App16 { grid-area: App16; }
+.App17 { grid-area: App17; }
+.App18 { grid-area: App18; }
+.App19 { grid-area: App19; }
+.App20 { grid-area: App20; }
+.Space2 { grid-area: Space2; }
+.FaveApps { grid-area: FaveApps; }
+
+.grayBox{
+  width: 100%;
+  height: 100%;
+  -webkit-backdrop-filter: blur(150px);
+  backdrop-filter: blur(200px);
+  box-shadow: 0 0 5px 1px rgb(0, 0, 0, 0.1);
+}
