@@ -1,0 +1,85 @@
+body{
+  background: black;
+}
+
+.Grid-whiteBox{
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  background: white;
+  border-radius: 28%;
+  overflow: hidden;
+  --color: gray;
+}
+
+table{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+}
+td, th {
+  border: 2px solid var(--color);
+}
+
+
+tr td:nth-child(5n+1){
+  width: 8%;
+}
+tr td:nth-child(3n+2){
+  width: 25%;
+}
+tr td:nth-child(3){
+  width: 17%;
+}
+tr td:nth-child(4){
+  width: 17%;
+}
+
+tr:nth-child(5n+1){
+  height: 8%;
+}
+tr:nth-child(3n+2){
+  height: 25%;
+}
+tr:nth-child(3){
+  height: 17%;
+}
+tr:nth-child(4){
+  height: 17%;
+}
+
+.Grid-c{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: solid 3px var(--color);
+  aspect-ratio: 1;
+}
+
+.Grid-s{
+  width: 30%;
+}
+.Grid-m{
+  width: 48%;
+}
+.Grid-l{
+  width: 75%;
+}
+
+.Grid-line{
+  position: absolute;
+  width: 0px;
+  height: 141%;
+  border: solid 1px var(--color);
+  left: 50%;
+  top: -22%;
+}
+.Grid-one{
+  transform: rotate(45deg);
+}
+.Grid-two{
+  transform: rotate(-45deg);
+}

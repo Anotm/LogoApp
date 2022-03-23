@@ -1,0 +1,66 @@
+.container{
+	width: 100%;
+  	aspect-ratio: 1;
+}
+
+.colorBox{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 200px;
+	aspect-ratio: 1;
+	background: rgb(30, 85, 255);
+	border-radius: 25%;
+	overflow: hidden;
+}
+
+.colorBox:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 10px;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	background: white;
+	box-shadow: 
+		60px 220px 30px 70px rgb(252, 204, 99),
+		70px 200px 30px 110px rgb(233, 89, 80),
+		240px 480px 100px 500px rgb(188, 42, 141);
+}
+
+.whiteBorder{
+	position: relative;
+	z-index: 1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 120px;
+	aspect-ratio: 1;
+	border: solid 14px white;
+	border-radius: 30%;
+}
+
+.whiteCircle{
+	position: absolute;
+	z-index: 1;
+	right: 0;
+	transform: translate(-110%, 110%);
+	width: 15px;
+	aspect-ratio: 1;
+	background: white;
+	border-radius: 50%;
+}
+
+.lence{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+	width: 40px;
+	aspect-ratio: 1;
+	border: solid 14px white;
+	border-radius: 50%;
+}

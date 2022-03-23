@@ -1,0 +1,84 @@
+
+@font-face {
+  font-family: ADIDAS;
+  src: 
+    url('fonts/adidas-regular.woff') format('woff'), 
+    url('fonts/adidas-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: ADIDAS_bold;
+  src: 
+    url('fonts/adidas-bold.woff') format('woff'), 
+    url('fonts/adidas-bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: ADIDAS_bolditalic;
+  src: 
+    url('fonts/adidas-bolditalic.woff') format('woff'), 
+    url('fonts/adidas-bolditalic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: ADIDAS_italic;
+  src: 
+    url('fonts/adidas-italic.woff') format('woff'), 
+    url('fonts/adidas-italic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container{
+  width: 100%;
+  aspect-ratio: 1;
+  background: black;
+  border-radius: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bars{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1.8;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  transform: translate( 5%, -10%);
+}
+.b{
+  --rot: -25deg;
+  position: relative;
+  width: 18%;
+  height: 100%;
+  background-color: white;
+  margin-right: 6%;
+  -webkit-transform: rotate(var(--rot));
+  -moz-transform: rotate(var(--rot));
+  transform: rotate(var(--rot));
+}
+.one{
+  margin-top: 85%;
+}
+.two{
+  margin-top: 50%;
+}
+.three{
+  margin-top: 14%;
+}
+
+.writing{
+  margin-top: -11%;
+  position: static;
+  text-align: center;
+  color: white;
+  font-size: 18vw;
+  font-family: ADIDAS_bold;
+}
